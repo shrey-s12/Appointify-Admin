@@ -6,7 +6,7 @@ const AppContextProvider = (props) => {
 
   const currency = "$";
 
-  const claculateAge = (dob) => {
+  const calculateAge = (dob) => {
     const today = new Date();
     const birthDate = new Date(dob);
     let age = today.getFullYear() - birthDate.getFullYear();
@@ -22,7 +22,7 @@ const AppContextProvider = (props) => {
   };
 
   const value = {
-    claculateAge,
+    calculateAge,
     slotDateFormate,
     currency
   };
